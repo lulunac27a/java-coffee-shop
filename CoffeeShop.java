@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class CoffeeShop {
     // Machine inventory and money state
-    private int water = 1000;      // in ml
-    private int milk = 500;        // in ml
+    private int water = 1000; // in ml
+    private int milk = 500; // in ml
     private int coffeeBeans = 100; // in grams
-    private int cups = 10;         // disposable cups
-    private double money = 50.00;  // cash register balance
+    private int cups = 10; // disposable cups
+    private double money = 50.00; // cash register balance
 
     public static void main(String[] args) {
         CoffeeShop machine = new CoffeeShop();
@@ -20,7 +20,8 @@ public class CoffeeShop {
         System.out.println("Welcome to the Java Coffee Shop!");
 
         while (running) {
-            System.out.println("\nSelect an option: [buy] [fill] [status] [exit]");
+            System.out.println(
+                    "\nSelect an option: [buy] [fill] [status] [exit]");
             System.out.print("> ");
             String action = scanner.nextLine().trim().toLowerCase();
 
@@ -36,7 +37,8 @@ public class CoffeeShop {
                     break;
                 case "exit":
                     running = false;
-                    System.out.println("Shutting down coffee machine. Have a great day!");
+                    System.out.println(
+                            "Shutting down coffee machine. Have a great day!");
                     break;
                 default:
                     System.out.println("Invalid command. Please try again.");
@@ -72,7 +74,8 @@ public class CoffeeShop {
         }
     }
 
-    private void makeDrink(String name, int reqWater, int reqMilk, int reqBeans, double cost) {
+    private void makeDrink(String name, int reqWater, int reqMilk, int reqBeans,
+            double cost) {
         if (water < reqWater) {
             System.out.println("Sorry, not enough water!");
         } else if (milk < reqMilk) {
@@ -87,7 +90,8 @@ public class CoffeeShop {
             coffeeBeans -= reqBeans;
             cups -= 1;
             money += cost;
-            System.out.printf("Resources confirmed! Dispensing your %s. Enjoy!%n", name);
+            System.out.printf(
+                    "Resources confirmed! Dispensing your %s. Enjoy!%n", name);
         }
     }
 
@@ -107,7 +111,8 @@ public class CoffeeShop {
 
             System.out.println("Supplies restocked!");
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter whole numbers only.");
+            System.out
+                    .println("Invalid input. Please enter whole numbers only.");
         }
     }
 

@@ -22,11 +22,14 @@ public class CoffeeShop {
             switch (choice) {
                 case 1:
                     itemCost = 3.25;
-                    itemCost += customizeDrink(scanner, true, true); // can add cream/sugar
+                    itemCost += customizeDrink(scanner, true, true); // can add
+                                                                     // cream/sugar
                     break;
                 case 2:
                     itemCost = 4.25;
-                    itemCost += customizeDrink(scanner, false, false); // espresso custom options
+                    itemCost += customizeDrink(scanner, false, false); // espresso
+                                                                       // custom
+                                                                       // options
                     break;
                 case 3:
                     itemCost = 2.75;
@@ -43,11 +46,13 @@ public class CoffeeShop {
             System.out.printf("Item added! Current total: $%.2f%n", totalBill);
         }
 
-        System.out.printf("\nThank you! Your final total is: $%.2f%n", totalBill);
+        System.out.printf("\nThank you! Your final total is: $%.2f%n",
+                totalBill);
         scanner.close();
     }
 
-    public static double customizeDrink(Scanner scanner, boolean allowCream, boolean allowSugar) {
+    public static double customizeDrink(Scanner scanner, boolean allowCream,
+            boolean allowSugar) {
         double extrasCost = 0.0;
 
         System.out.print("Do you want it iced? (y/n): ");
