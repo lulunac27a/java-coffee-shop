@@ -1,6 +1,7 @@
 # Java Coffee Shop
 
-A simple app in Java that simulate a coffee shop with inventory management and customization options.
+A simple app in Java that simulate a coffee shop with inventory management and
+customization options.
 
 ### Getting Started
 
