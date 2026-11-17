@@ -2,7 +2,7 @@
 
 A simple app in Java that simulate a coffee shop.
 
-### Gettng Started
+### Getting Started
 
 1. Clone the repository.
 2. Run the program after changing the directory:
